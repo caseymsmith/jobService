@@ -10,13 +10,9 @@ We simulate this by having each job fall into one of two job classes: I/O bound 
 The program gathers statistics, computes, and report the following information:
 
 1.	The number of jobs for each job class and CPU requirement.
-	
 2.	The average time that a job spends in the wait queue.
-	
 3. 	The average elapsed time that a job spends in the CPU queue, for each of the job types, broken down by CPU time required and job class.
- 	
 4. 	The percentage of the time that the CPU is busy. (The CPU is idle if there are no jobs in the system.)
- 	
 5. 	The "through-put" of the system, expressed as the number of jobs handled per hour.
  	
 
