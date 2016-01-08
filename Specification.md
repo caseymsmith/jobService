@@ -19,31 +19,22 @@ The program gathers statistics, computes, and report the following information:
 To summarize, in each clock cycle (a simulated second), the following tasks are performed
 
 1. 	The clock is incremented.
- 	
 2. 	If a job (or jobs) enters the system, determine the job number, job class, and CPU time required. The job class and CPU time required for each job must be determined by a random number generator. Time stamp the job, and enqueue it in the wait queue.
- 	
 3. 	If the CPU queue is not full, dequeue the front job(s) from the wait queue and enqueue the job(s) in the CPU queue.
- 	
 4. 	If the CPU queue is not empty, service the jobs in the CPU queue, giving each job serviced the correct time-slice. (Do not dequeue a job from the CPU queue until its "execution" is complete.) Otherwise, if the CPU queue is empty, increment the CPU idle time.
- 	
 5. 	If a job (or jobs) completes its execution, remove it from the CPU queue and calculate the elapsed times for statistics.
  	
 
 The program prompts the user to input the simulation parameters:
 
 1.	The number of jobs to be generated.
-	
 2. 	The probability of one job entering the system in each simulated second.
- 	
 
 All program output is written to a text file, "CpuSim.out"
 
 1. 	Echo print the simulation parameters supplied by the user.
- 	
 2. 	For the first 10 minutes of simulated clock time, print the job number, job class, CPU time and time each job entered the system.
- 	
 3.	After the first 10 minutes of simulated clock time, print out a system summary every 60 seconds. The summary should contain the time, the number of jobs in each queue, and the job number of the job at the front of the queue.
-	
 4. 	When the simulation is complete (the specified number of jobs have been executed), print a report of the job statistics as noted above. 
  	
 
